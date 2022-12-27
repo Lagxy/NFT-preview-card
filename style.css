@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Main-dark-blue: hsl(217, 54%, 11%);
+    --Card-dark-blue: hsl(216, 50%, 16%);
+    --Line-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300, 400, 600;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--Main-dark-blue);
+    font-family: 'Outfit';
+}
+
+p {
+    font-size: 18px;
+    color: var(--Soft-blue);
+    line-height: 1.7rem;
+}
+
+.container {
+    width: 300px;
+    margin: 60px auto;
+    padding: 25px 25px;
+    background-color: var(--Card-dark-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container > h2 {
+    width: fit-content;
+    color: var(--White);
+    padding: 24px 0 15px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container > h2:hover {
+    color: var(--Cyan);
+}
+
+.view {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: .3s;
+    cursor: pointer;
+}
+
+.view:hover {
+    opacity: 1;
+    background-color: hsl(178, 100%, 50%, .5);
+}
+
+.currency {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--Line-dark-blue);
+}
+
+.currency1, .currency2 {
+    width: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency1 p {
+    color: var(--Cyan);
+}
+
+.source {
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+}
+
+.source a {
+    text-decoration: none;
+    color: var(--White);
+    transition: .3s;
+}
+
+.source a:hover {
+    color: var(--Cyan);
+}
+
+.source img {
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
