@@ -19,12 +19,6 @@ body {
     box-sizing: border-box;
     background-color: var(--Main-dark-blue);
     font-family: 'Outfit';
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 p {
@@ -35,6 +29,7 @@ p {
 
 .container {
     width: 300px;
+    margin: 40px auto;
     padding: 25px 25px;
     background-color: var(--Card-dark-blue);
     border-radius: 20px;
